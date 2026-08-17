@@ -2,7 +2,7 @@
 
 import mysql.connector as mc
 try:
-    conobj=mc.connect(host="127.0.0.1",
+    conobj=mc.connect(host="localhost",
                       user="root",
                       passwd="@4321Raviptdr",
                       use_pure=True)

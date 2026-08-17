@@ -5,13 +5,13 @@
 import mysql.connector as mc
 def create_table():
     try:
-        conobj=mc.connect(host="127.0.0.1",
+        conobj=mc.connect(host="localhost",
                           user="root",
                           passwd="@4321Raviptdr",
                           use_pure=True,
                           database="batch6pm")
         curobj=conobj.cursor()
-        ct="create table employee(eno int primary key, name varchar(15) not null, sal float not null, cname varchar(15) not null)"
+        ct="create table ravi(eno int primary key, name varchar(15) not null, sal float not null, cname varchar(15) not null)"
         curobj.execute(ct)
         print("Table Created Successfully in MySQL---verify")
     except mc.DatabaseError as e:

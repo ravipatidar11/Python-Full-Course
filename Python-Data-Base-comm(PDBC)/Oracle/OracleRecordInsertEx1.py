@@ -7,9 +7,9 @@ from mysql.connector.aio import cursor
 
 def record_insert():
     try:
-        conobj=orc.connect("C##RAVI/Ravi123@192.168.1.93:1521/orcl")
+        conobj=orc.connect("C##RAVI/Ravi123@localhost:1521/orcl")
         curobj=conobj.cursor()
-        iq="insert into employee values(400,'Rp',15.25,'Medi-caps')"
+        iq="insert into employee values(4000,'Rp',15.25,'Medi-caps')"
         curobj.execute(iq)
         conobj.commit()
         print("Record inserted Successfully---verify")
