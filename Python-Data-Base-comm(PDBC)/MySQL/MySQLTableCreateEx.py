@@ -11,7 +11,7 @@ def create_table():
                           use_pure=True,
                           database="batch6pm")
         curobj=conobj.cursor()
-        ct="create table ravi(eno int primary key, name varchar(15) not null, sal float not null, cname varchar(15) not null)"
+        ct="create table jay(eno int primary key, name varchar(15) not null, sal float not null, cname varchar(15) not null)"
         curobj.execute(ct)
         print("Table Created Successfully in MySQL---verify")
     except mc.DatabaseError as e:
