@@ -1,0 +1,31 @@
+		============================================================
+				Employee Information System-----CLI Project
+		============================================================
+			1. Add Employee
+			2. Delete Employee
+			3. Update Employee
+			4. View Single Employee
+			5. View All Employees
+			6. Search Employee
+			7. Exit
+		============================================================
+			Enter UR Choice:
+		============================================================
+-----------------------
+File System
+-----------------------
+1. EmpMenu.py<-------Module Name----------------
+           menu()
+2. EmpAdd.py<-------Module Name
+	addEmployee()
+3. EmpDelete.py<-------Module Name
+	deleteEmployee()
+4. EmpUpdate.py<-------Module Name
+	updateEmployee()
+5. EmpView.py<-------Module Name-----------
+	viewSingleEmployee()
+	viewAllEmployees()
+6. EmpSearch.py<-------Module Name
+	searchEmployee()
+7. EmpMainProject.py<---Main Program
+------------------------------------------------------------

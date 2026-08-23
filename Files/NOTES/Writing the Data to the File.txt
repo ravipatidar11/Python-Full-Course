@@ -1,0 +1,21 @@
+				================================================================
+								Writing the Data to the File
+				================================================================
+=>To write the Data to the File, we have Two Pre-Defined Functions Present in File Pointer Object. They are
+
+					1. write()
+					2. writelines()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. write()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:     FilePointerObj.write(str-data)
+=>This Function is used for Writing  Any Type of Data to the File in the form of str data.
+=>If we have non-str Data then we convert the non-str data into str type data by using str()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. writelines()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:     FilePointerObj.writelines(Iterable-Object Data)
+=>This Function is used for Writing Iterable-Object Data to the File in the form of str data.
+=>If we have non-str Data then we convert the non-str data into str type data by using str()
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: Here write() and writelines() writing the Data to the file in the form of Value by Value and It is One of the Time consuming Process.

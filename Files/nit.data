@@ -1,0 +1,273 @@
+Guido Van Rossum is the Author of Python
+The Python lang Developed in Nether Lands
+at CWI Institute
+Today is a Special day bcoz 
+Online studets are not Interactive with KVR
+bcoz they don't have respect towards the teacher.
+KVR can't do any thing
+HYD is the Cap of TS
+200	Travis	55.78
+100	Rossum	25.58
+300	Dennis	55.99
+400	Hunter	33.33
+500	Ritche	66.66
+250	KVR	44.44
+#Prohgram for Copying the content of One File into Another File
+#FileCopyEx.py
+def filecopy():
+    try:
+        srcfile=input("Enter Source File:")
+        with open(srcfile,"r") as rp:
+            dstfile=input("Enter Destination File:")
+            with open(dstfile,"a") as wp:
+                #read the source file Data
+                srcfiledata=rp.read()
+                #Write the source file data to Destination file
+                wp.write(srcfiledata)
+                print("File Copied Successfully")
+    except FileNotFoundError:
+        print("Source File Does Not Found")
+
+#Main Program
+filecopy()//LinkedListOpDemo.java
+import java.util.Scanner;
+class NareshLinkedList
+{
+		int data;
+		NareshLinkedList  addr;
+		NareshLinkedList root;
+	NareshLinkedList()
+	{
+		root=null;
+	}
+	NareshLinkedList(int data,NareshLinkedList  addr)
+	{
+		this.data=data;
+		this.addr=addr;
+	}
+	
+	//method for isEmpty()
+	boolean   isEmpty()
+	{	
+		if(root==null)
+			return true;
+		else
+			return false;
+	}
+	//define insertFirst() to the linkedlist
+	void  insertFirst(int data)
+	{
+		NareshLinkedList newnode=new NareshLinkedList(data,null);
+		if(root==null)
+			root=newnode;
+		else
+		{
+			newnode.addr=root;
+			root=newnode;
+		}//else
+		System.out.println(data+"Inserted First");		
+	}//insertFirst()
+	void  insertMiddle(int data,int pos)
+	{
+		if(isEmpty())
+		{
+			System.out.println("Linked List empty");
+		}
+		else
+		{
+			NareshLinkedList temp=root;
+			int totnodes=0;
+			while(temp!=null)
+			{
+				totnodes++;
+				temp=temp.addr;
+			}
+			if(pos>totnodes)
+			{
+				System.out.println("Invalid Position");
+			}
+			if(pos==1)
+			{
+				System.out.println("Invalid Position");
+			}
+			else
+			{
+				if((pos>1) &&(pos<totnodes+1))
+				{
+					temp=root;
+					int i=1;
+					 while((i<pos-1) &&(temp.addr!=null) )
+					{
+						 i++;
+						 temp=temp.addr;
+					}
+					NareshLinkedList newnode=new NareshLinkedList(data,null);
+					newnode.addr=temp.addr;
+					temp.addr=newnode;
+					System.out.println(data+" added at:"+pos);
+				}
+			}//else
+		}//else
+	}//insertMiddle()
+	void  insertLast(int data)
+	{
+		if(isEmpty())
+		{
+			System.out.println("Linked List empty");
+		}
+		else
+		{
+			NareshLinkedList temp=root;
+			while(temp.addr!=null)
+			{
+				temp=temp.addr;
+			}
+			NareshLinkedList newnode=new NareshLinkedList(data,null);
+			temp.addr=newnode;
+			System.out.println(data+"is addded at last:");
+		}//else
+	}//insertLast()
+	void  displist()
+	{
+		if(isEmpty())
+		     System.out.println("Linked is Empty");
+		else
+		{
+			System.out.println("-------------------------------------------");
+			NareshLinkedList temp=root;
+			//traverse thelinked List
+			while(temp!=null)
+			{
+				System.out.print(temp.data+"-->");
+				temp=temp.addr;
+			}
+			System.out.print("null");
+		}
+	}//displist()
+
+void   delete(int data)
+{
+	if(isEmpty())
+	{
+			System.out.println("Linked List empty");
+	}
+	else
+	{
+		NareshLinkedList temp=root;
+		if(temp.data==data)
+		{
+			root=temp.addr;
+			System.out.println(data+" Deleted From First ");
+		}
+		else
+		{	
+			temp=root;
+			NareshLinkedList prev=root;
+			while(temp.addr!=null)
+			{
+				temp=temp.addr;
+				if(temp.data==data)
+				{
+					System.out.println(data+" Deleted From Linked List");
+					prev.addr=temp.addr;
+				}
+				else
+				{
+					prev=temp;
+				}
+			}//while
+		}//else
+	}//else
+}//delete()
+void search(int skey)
+{
+	if(isEmpty())
+	{
+			System.out.println("Linked List empty");
+	}
+	else
+	{
+			NareshLinkedList temp=root;
+			int pos=1;
+			boolean found=false;
+		while(temp!=null)
+		{
+			if(temp.data==skey)
+			{
+				found=true;
+				break;
+			}
+			++pos;
+			temp=temp.addr;
+		}//while
+		if(found)
+			System.out.println(skey+" Found at :"+pos);
+		else
+			System.out.println(skey+" does not exist in Linked List:");
+	}//else
+}//search()
+
+		static void linkedlistmenu()
+		{
+			System.out.println("\n-----------------------------------------");
+			System.out.println("\tLinked List Operations");
+			System.out.println("-----------------------------------------");
+			System.out.println("\t1.Adding First");
+			System.out.println("\t2.Adding Middle ");
+			System.out.println("\t3.Adding Last");
+			System.out.println("\t4.Delete");
+			System.out.println("\t5.Search");
+			System.out.println("\t6.Display");
+			System.out.println("\t7.Exit");
+			System.out.println("-----------------------------------------");
+		}
+}//NareshLinkedList
+
+class LinkedListOpDemo
+{
+	public static void main(String[] args) 
+	{
+		NareshLinkedList ns=new NareshLinkedList();
+		Scanner s=new Scanner(System.in);
+		while(true)
+		{
+			NareshLinkedList.linkedlistmenu();
+			System.out.println("Enter Ur Choice:");
+			int ch=Integer.parseInt(s.nextLine());
+			switch(ch)
+			{
+				case 1:System.out.println("Enter Which Element u want to insert at First:");
+						int ele=Integer.parseInt(s.nextLine());
+						ns.insertFirst(ele);
+						break;
+				case 2:System.out.println("Enter Which Element u want to insert at In middle:");
+						int ele1=Integer.parseInt(s.nextLine());
+						System.out.println("Enter Which Position u want to insert :");
+						int pos=Integer.parseInt(s.nextLine());
+						ns.insertMiddle(ele1,pos);
+						break;
+						
+				case 3:System.out.println("Enter Which Element u want to insert at last:");
+						int ele2=Integer.parseInt(s.nextLine());
+						ns.insertLast(ele2);
+						break;
+			case 4:System.out.println("Enter Which Element u want to delete:");
+						int ele3=Integer.parseInt(s.nextLine());
+						ns.delete(ele3);
+						break;
+			case 5: ns.displist();
+						System.out.println("Enter Which Element u want to search:");
+						int ele4=Integer.parseInt(s.nextLine());
+						ns.search(ele4);
+						break;
+
+				case 6:	ns.displist();
+							break;
+				case 7:System.out.println("Thx for using this program");
+							System.exit(0);
+				default:
+					System.out.println("Ur Selection of Operation is wrong-try again");
+			}//switch
+		}//while
+	}//main()
+}// LinkedListOpDemo--ELC

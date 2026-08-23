@@ -1,0 +1,85 @@
+			======================================================
+						Types of Applications
+			======================================================
+=>In Programming Lang,We develop Two Types of Applications.
+			1. Non-Persistant Applications
+			2. Persistant Applications
+------------------------------------------------------------------
+1. Non-Persistant Applications
+------------------------------------------------------------------
+=>In Non-Persistant Applications we do the following
+			a) User Enters the Data and Stored in Main Memory(RAM)
+			b) Data Processing in Main Memory (RAM) and Result Stored  in RAM Only---Temp Data
+			c) We use to display the Result of the Program on the console
+NOTE: All Our Previous Programs are Considered as Non-Persistant Applications
+------------------------------------------------------------------
+2. Persistant Applications
+------------------------------------------------------------------
+=>In Persistant Applications we do the following
+			a) User Enters the Data and Stored in Main Memory(RAM)
+			b) Data Processing in Main Memory (RAM) and Result Stored  in RAM Only---Temp Data
+			c) We use to display the Result of the Program on the console
+			d) WE MUST SAVE / STORE THE TEMP DATA OF MAIN MEMORY INTO FILES / DATA BASE SOFTWARE
+------------------------------------------------------------------
+			======================================================
+					Introduction to Files
+			======================================================
+=>Purpose of Files          :		Data Persistency
+=>Where Files Resides  :		Secondary Memory (HDD)
+=>What is File Name	    :		Named Location in Secondary Memory (HDD)
+=>Def. of File		    :		Collection of Records ---Flat File
+=>Def. of Stream		    :		The Flow of Data Between Main Memory and File of Secondary Memory
+----------------------------------------------------------------------------------------------------------------------------------------------
+Operations on Files
+----------------------------------------------------------------------------------------------------------------------------------------------
+				1. Write Operations
+				2. Read Operations
+---------------------------------
+1. Write Operations
+---------------------------------
+Purpose:  To Save OR Transfer the Object Data of Main Memory in the file of Secondary Memory.
+---------------
+Steps	
+---------------
+			1. Choose the File Name
+			2. Open the file name in write mode
+			3. Perform Cycle of Write Operation
+--------------------
+Exceptions
+--------------------
+			1. FileExistError
+			2. IOError
+			3. OSError
+---------------------------------
+2. Read Operations
+---------------------------------
+Purpose :	To Transfer OR Read the Reacords from File of Secondary Memory into Object of Main Memory
+
+Steps:
+			1.  Choose the File Name
+			2.  Open the file name in Read mode
+			3. Perform Cycle of Read Operations
+Exceptions:
+			1. FileNotFoundError
+			2. EOFError
+----------------------------------------------------------------------------------------------------------------------------------------------
+			Types of Files
+----------------------------------------------------------------------------------------------------------------------------------------------
+			1. Text Files
+				=> Contains the Data in the form of Alphabets, Digits and Special Symbols
+				=>Text Files are Denoted by a Letter 't' (By Default )
+				Examples:   .c    .cpp   .py   .java    .csv
+							.txt     .data   .info ....etc
+							PDF without images
+							.docx  without images
+			2. Binary Files
+				=>Contains the Data in the form of Binary Format ( Pixel format)
+				=>Binary Files are Denoted Letter called 'b'
+				Examples:
+							.jpg   .jpeg, .png  , .gif
+							All Video Files  (.mvi,)
+							All audio Files( .mp3,mp4, .avi...etc)
+							PDF with Images 
+							.docx with images
+----------------------------------------------------------------------------------------------------------------------------------------------
+

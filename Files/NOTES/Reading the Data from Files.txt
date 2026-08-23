@@ -1,0 +1,18 @@
+				============================================================
+								Reading the Data from Files
+				============================================================
+=>To Read the Data from File, we have Two Pre-Defined Functions Present in File Pointer Object. They are
+						1. read()
+						2. readlines()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. read()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:     Varnname=FilePointerObj.read()
+=>This Function is used for Reading Entire Data of the File and Placed that Data in LHS Variable and whose type is str.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. readlines()
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Syntax:     Varnname=FilePointerObj.readlines()
+=>This Function is used for Reading Entire Data of the File and Placed that Data in LHS Variable and whose type is List.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: Here read() and readlines() are Reading the Data from File in the form of Value by Value	 and It is One of the Time Consuming Process.

@@ -1,0 +1,152 @@
+				============================================================
+						Operations on Files
+				============================================================
+=>On Files, We can Perform TWO Types of Operations. They are
+
+			1. Write Operation
+			2. Read Operation
+--------------------------------------------------------
+1. Write Operation
+--------------------------------------------------------
+=>The Purpose of Write Operation is that "To save OR Write the Object Data of Main Memory into the File of Secondary Memory as   Record".
+-----------
+Steps:
+----------
+			1. Choose the File Name
+			2. Open the File in Write Mode
+			3. Perform Cycle of Write Operations
+-----------------------
+Exceptions
+-----------------------
+		1.   FileExistError
+		2.   IOError
+		3.   OSError
+--------------------------------------------------------
+2. Read Operation
+--------------------------------------------------------
+=>The Purpose of Read Operation is that "To Transfer the Records from File of Secondary Memory into the Object of Main Memory"
+=>Steps
+		1. Choose the File Name
+		2.Open the File Name in Read Mode.
+		3. Perform Cycle of Read Operations.
+-----------------------
+Exceptions
+-----------------------
+	1. EOFException
+	2. FileNotFoundError
+----------------------------------------------------------------------------------------------------------------------------------------------
+						Types of Files
+----------------------------------------------------------------------------------------------------------------------------------------------
+=>Two Types of Files
+					1. Text Files
+					2. Binary Files
+-----------------------------------------
+1. Text Files
+-----------------------------------------
+=>Text Files Contains the Data in the form of Alphabets, Digits and Special Symbols.
+=>Programatically, Text Files are Denoted by a letter 't' (Defult)
+Examples:
+					.txt , .py  . cpp, .java 
+					.docx......etc
+-----------------------------------------
+2. Binary Files
+-----------------------------------------
+=>The  Binary Files Contains the Data in the form of Binary Format
+=>The Binary Files  Denoted by a Letter  'b'.
+Examples:
+				All Images (.jpeg, .jpg, .png, .gif..etc)
+				All Audio Files (.avi, .mvi. .mp3, mp4...etc)
+				All Vidieo Files....etc
+				PDF with Images 
+----------------------------------------------------------------------------------------------------------------------------------------------
+					File Opening Modes
+----------------------------------------------------------------------------------------------------------------------------------------------
+=>The Purpose of File Opening Modes is that "In which Mode File is Opening"
+=>Makes us understand in which mode we are Opening the File
+=>In Python, we have EIGHT File Opening Modes
+					1. r		2. w		3. a
+					4. r+	5. w+	6. a+
+					7. x		8. x+
+-------------------------------------------------
+1. r
+-------------------------------------------------
+=>This Mode is used for Opening the File in Read Mode and Allows us to Perform Read Operations Only.
+=>If we open the File in 'r' Mode and If that File Does not Exist then we get FileNotFoundError.
+=>Out-off  these many modes, 'r' Mode is the Default mode
+-------------------------------------------------
+2. w
+-------------------------------------------------
+=>This Mode is used for Creating a File , Open that File in write mode and allows us to Perform Write Operations only.
+=>if we Open NEW File Name in 'w' Mode then It will Create a NEW File, Open in write Mode and allows us to Perform Write Operations only.
+=>If we Open EXISTING File Name in 'w' then It will Open in write mode and EXITING DATA OVERLAPPED With NEW Data.
+-------------------------------------------------
+3. a
+-------------------------------------------------
+=>This Mode is used for Creating a File , Open that File in write mode and allows us to Perform Write Operations only.
+=>if we Open NEW File Name in 'a' Mode then It will Create a NEW File, Open in write Mode and allows us to Perform Write Operations only.
+=>If we Open EXISTING File Name in 'a' then It will Open in write mode and EXITING DATA APPENDED With NEW Data.
+-------------------------------------------------
+4. r+
+-------------------------------------------------
+=>This Mode is used for Opening the File in Read Mode and Allows us to Perform First Read Operations and Later Performs Write Operation also.
+=>If we open the File in 'r+' Mode and If that File Does not Exist then we get FileNotFoundError.
+-------------------------------------------------
+5. w+
+-------------------------------------------------
+=>This Mode is used for Creating a File , Open that File in write mode and allows us to Perform First  Write Operations and Later we can Perform Read Operatio also.
+=>if we Open NEW File Name in 'w' Mode then It will Create a NEW File, Open in write Mode and allows us to Perform First Write Operations and Later we can perform Read Operation only.
+=>If we Open EXISTING File Name in 'w+' then It will Open in write mode and EXITING DATA OVERLAPPED With NEW Data.
+-------------------------------------------------
+6. a+   ---> 
+-------------------------------------------------
+=>This Mode is used for Creating a File , Open that File in write mode and allows us to Perform First  Write Operations and Later we can Perform Read Operatio also.
+=>if we Open NEW File Name in 'a+' Mode then It will Create a NEW File, Open in write Mode and allows us to Perform First Write Operations and Later we can perform Read Operation only.
+=>If we Open EXISTING File Name in 'a+' then It will Open in write mode and EXITING DATA APPENDED With NEW Data.
+-------------------------------------------------
+7. x 
+-------------------------------------------------
+=>This Mode is used for Creating a File  , Open that File in Exclusively in write mode and allows us to Perform Write Operations Only.
+=>If we try Open existing File in 'x' Mode then we get FileExistError.
+-------------------------------------------------
+8. x+ 
+-------------------------------------------------
+=>This Mode is used for Creating a File  , Open that File in Exclusively in write mode and allows us to Perform First Write Operations  and Later Read Operation also.
+=>If we try Open existing File in 'x+' Mode then we get FileExistError.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+				Number of Approaches to Open the Files
+----------------------------------------------------------------------------------------------------------------------------------------------
+=>To Open the File, we have Two Approaches. They are
+				
+				1. By using  open()
+				2. By using   'with open() as  ' 
+---------------------------------------------------------------------------
+1. By using  open()
+---------------------------------------------------------------------------
+=>Syntax:       varname=open("FileName","FileMode")   Ex:          kvr=open("stud.data", "r")
+-------------------------
+Explanation
+------------------------
+=>Here 'varname'-------->An Object and Called File Pointer and whose type is <class, _io.TextIOWrapper>
+=>Here open()---------------->Used Opening the Specified File Name in Specified File Mode
+=>Here "File Name"-------->Name of File
+=>Here "File Mode"------->Represents any one of r,w,a,r+,w+,a+,x,x+
+=>Limitation: Requires Manual Closing
+---------------------------------------------------------------------------
+2. By using   'with open() as  ' 
+---------------------------------------------------------------------------
+=>Syntax:       with   open("FileName","FileMode") as varname:
+				------------------------------------------------
+				------------------------------------------------
+				Block of Statements--File Operations
+				------------------------------------------------
+				------------------------------------------------
+			---------------------------------------------------------------
+			Other Statements in Program
+			----------------------------------------------------------------
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
